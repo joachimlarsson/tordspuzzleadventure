@@ -20,14 +20,12 @@ public class ButtonTrigger : MonoBehaviour
 			triggerEntered = false;
 		}
 	}
-
-	// Start is called before the first frame update
+	
 	void Awake()
     {
 		defaultScale = transform.localScale;
 	}
-
-    // Update is called once per frame
+	
     void Update()
     {
 		if (triggerEntered)
