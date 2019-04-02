@@ -4,6 +4,7 @@ public class ButtonTrigger : MonoBehaviour
 {
 	bool triggerEntered = false;
 	Vector3 defaultScale;
+	public GameObject grid;
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -34,6 +35,11 @@ public class ButtonTrigger : MonoBehaviour
 			scaleY = Mathf.Max(scaleY, defaultScale.y * 0.1f);
 
 			transform.localScale = new Vector3(transform.localScale.x, scaleY, transform.localScale.z);
+
+			if (grid)
+			{
+				grid.GetComponent<StartPathAnimation>().StartAnimation();
+			}
 		}
 		else
 		{
