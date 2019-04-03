@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 73435476143634428}
   - component: {fileID: 8998989215246185348}
   - component: {fileID: 6336128723110469028}
+  - component: {fileID: 206726444230269345}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -124,3 +125,15 @@ MonoBehaviour:
   rotationSpeed: 300
   maxRotateTime: 2
   maxAnimationTime: 2
+--- !u!114 &206726444230269345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73435476143634427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca936ca9747947aa58ffcb18d8c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

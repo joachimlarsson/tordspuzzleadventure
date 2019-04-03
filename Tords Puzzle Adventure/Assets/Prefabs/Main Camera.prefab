@@ -97,3 +97,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelManager: {fileID: 6297587555469110202, guid: aabc002e4589dfa40a6f9700fb42b57d,
     type: 3}
+  materialManager: {fileID: 427140788276083820, guid: 2fa1c675f897a8848868812692a23281,
+    type: 3}

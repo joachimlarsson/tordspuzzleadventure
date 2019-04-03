@@ -41,6 +41,11 @@ public class LevelManager : MonoBehaviour
 		Debug.Log("Level failed");
 	}
 
+	public int getCurrentLevel()
+	{
+		return currentLevel;
+	}
+
 	void Awake()
 	{
 		if (instance == null)
