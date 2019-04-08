@@ -4,6 +4,7 @@ public class Loader : MonoBehaviour
 {
 	public GameObject levelManager;
 	public GameObject materialManager;
+	public GameObject audioManager;
 
 	void Awake()
 	{
@@ -12,5 +13,8 @@ public class Loader : MonoBehaviour
 
 		if (MaterialManager.instance == null)
 			Instantiate(materialManager);
+
+		if (AudioManager.instance == null)
+			Instantiate(audioManager);
 	}
 }

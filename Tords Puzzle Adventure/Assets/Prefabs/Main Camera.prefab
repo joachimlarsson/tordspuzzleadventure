@@ -99,3 +99,5 @@ MonoBehaviour:
     type: 3}
   materialManager: {fileID: 427140788276083820, guid: 2fa1c675f897a8848868812692a23281,
     type: 3}
+  audioManager: {fileID: 4953485474630220142, guid: 362a4444ada5ed04d96a905cd3c0f272,
+    type: 3}
