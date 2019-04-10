@@ -101,3 +101,5 @@ MonoBehaviour:
     type: 3}
   audioManager: {fileID: 4953485474630220142, guid: 362a4444ada5ed04d96a905cd3c0f272,
     type: 3}
+  sceneManager: {fileID: 1350947640239677261, guid: f10e8054cc279a7459390f6496adaa92,
+    type: 3}

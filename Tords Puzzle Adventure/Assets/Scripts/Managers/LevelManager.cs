@@ -20,10 +20,24 @@ public class LevelManager : MonoBehaviour
 		{ 0,0,0,0,0,0,0,0 }
 	};
 
+	public int[,] level2 = new int[,]
+{
+		{ 0,0,0,0,0,0,0,0 },
+		{ 0,0,0,0,0,0,0,0 },
+		{ 1,1,1,1,1,1,1,1 },
+		{ 0,0,0,0,0,0,0,0 },
+		{ 0,0,0,0,0,0,0,0 },
+		{ 0,0,0,0,0,0,0,0 },
+		{ 0,0,0,0,0,0,0,0 },
+		{ 0,0,0,0,0,0,0,0 }
+};
+
 	public int[,] currentLevelGrid()
 	{
 		if (currentLevel == 1)
 			return level1;
+		if (currentLevel == 2)
+			return level2;
 		else
 		{
 			Debug.Log("No more levels added");
@@ -34,11 +48,14 @@ public class LevelManager : MonoBehaviour
 	public void levelCompleted()
 	{
 		Debug.Log("Level completed");
+		currentLevel += 1;
+		GameManager.instance.LoadLevel();
 	}
 
 	public void levelFailed()
 	{
 		Debug.Log("Level failed");
+		GameManager.instance.LoadLevel();
 	}
 
 	public int getCurrentLevel()
