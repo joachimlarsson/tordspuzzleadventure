@@ -4,9 +4,14 @@ using UnityEngine.UI;
 public class CheatsMenu : MonoBehaviour
 {
 	public GameObject character;
-	public bool isVisible = true;
+	public GameObject startPlatform;
+	public GameObject finishPlatform;
 
 	Vector3 characterStartPosition;
+	Vector3 levelStartPlatformPosition;
+	Vector3 levelFinishPlatformPosition;
+
+	public bool isVisible = true;
 
 	// GUI
 	float menuPosX = 20.0f;
@@ -37,15 +42,17 @@ public class CheatsMenu : MonoBehaviour
 		buttonPosY = buttonDefaultPosY;
 
 		GUI.Box(new Rect(menuPosX, menuPosY, menuWidth, menuHeight), "Cheats");
-		if (createButton("Teleport character"))
+		if (createButton("TP start pos"))
 		{
 			character.transform.position = characterStartPosition;
 		}
-		if (createButton("TODO"))
+		if (createButton("TP start platform"))
 		{
+			character.transform.position = levelStartPlatformPosition;
 		}
-		if (createButton("TODO"))
+		if (createButton("TP finish platform"))
 		{
+			character.transform.position = levelFinishPlatformPosition;
 		}
 		if (createButton("TODO"))
 		{
@@ -62,5 +69,7 @@ public class CheatsMenu : MonoBehaviour
 	void Awake()
 	{
 		characterStartPosition = character.transform.position;
+		levelStartPlatformPosition = startPlatform.transform.position;
+		levelFinishPlatformPosition = finishPlatform.transform.position;
 	}
 }

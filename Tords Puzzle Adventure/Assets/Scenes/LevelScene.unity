@@ -364,6 +364,12 @@ LensFlare:
     serializedVersion: 2
     m_Bits: 6
   m_Directional: 0
+--- !u!1 &525180192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 346936726283190576, guid: d5f5af1464191774093d438697bb7f5d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859655145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1959175849095339487, guid: 09ec35f455450524ca9a04817f965597,
@@ -489,6 +495,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1206189894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 346936726283190576, guid: c2dd4dda80727a748b28fe1b90f6403f,
+    type: 3}
+  m_PrefabInstance: {fileID: 238434288}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1526891410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010002477438, guid: 5ca4c580b3888314581688fa46fb142d,
@@ -915,6 +927,16 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 1824340508010589}
+    - target: {fileID: 3601118767015354114, guid: 5662089ec8c8a2d45b2087429e416f87,
+        type: 3}
+      propertyPath: startPlatform
+      value: 
+      objectReference: {fileID: 1206189894}
+    - target: {fileID: 3601118767015354114, guid: 5662089ec8c8a2d45b2087429e416f87,
+        type: 3}
+      propertyPath: finishPlatform
+      value: 
+      objectReference: {fileID: 525180192}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5662089ec8c8a2d45b2087429e416f87, type: 3}
 --- !u!1001 &5155660884030931069
