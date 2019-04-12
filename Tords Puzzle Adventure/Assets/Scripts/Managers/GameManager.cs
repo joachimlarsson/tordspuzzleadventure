@@ -26,16 +26,16 @@ public class GameManager : MonoBehaviour
 
 	public void LoadLobby()
 	{
-		SceneManager.LoadScene(lobbyScene);
+		Initiate.Fade(lobbyScene, Color.black, 0.5f);
 	}
 
 	public void LoadTutorial()
 	{
-		SceneManager.LoadScene(tutorialElevatorScene);
+		Initiate.Fade(tutorialElevatorScene, Color.black, 0.5f);
 	}
 
 	public void LoadLevel()
 	{
-		SceneManager.LoadScene(levelScene);
+		Initiate.Fade(levelScene, Color.black, 0.5f);
 	}
 }
