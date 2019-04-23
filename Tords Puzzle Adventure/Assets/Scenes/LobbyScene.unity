@@ -627,6 +627,19 @@ CapsuleCollider:
     type: 3}
   m_PrefabInstance: {fileID: 121724943058049027}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824340508010595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824340508010589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734ca2c81dd88b24b85df7a1428cbdfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishedPos: -4.5
 --- !u!1001 &121724943058049027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -638,6 +651,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 23968501122884042, guid: f25e28cbd550c4b4f884c4cc8cf9d6e7,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 23968501122884042, guid: f25e28cbd550c4b4f884c4cc8cf9d6e7,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 117196526529139930, guid: f25e28cbd550c4b4f884c4cc8cf9d6e7,
         type: 3}
@@ -693,16 +716,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 23968501122884042, guid: f25e28cbd550c4b4f884c4cc8cf9d6e7,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 23968501122884042, guid: f25e28cbd550c4b4f884c4cc8cf9d6e7,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f25e28cbd550c4b4f884c4cc8cf9d6e7, type: 3}
