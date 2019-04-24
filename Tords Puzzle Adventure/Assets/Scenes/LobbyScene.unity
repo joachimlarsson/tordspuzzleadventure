@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.23223564, g: 0.23544195, b: 0.27220207, a: 1}
+  m_IndirectSpecularColor: {r: 0.23224932, g: 0.23545149, b: 0.2722114, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -261,20 +261,6 @@ LensFlare:
     serializedVersion: 2
     m_Bits: 6
   m_Directional: 0
---- !u!1 &534669902 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1959175849095339487, guid: 09ec35f455450524ca9a04817f965597,
-    type: 3}
-  m_PrefabInstance: {fileID: 1959175848762570641}
-  m_PrefabAsset: {fileID: 0}
---- !u!124 &534669903
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
 --- !u!4 &534669905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1959175849095339456, guid: 09ec35f455450524ca9a04817f965597,
