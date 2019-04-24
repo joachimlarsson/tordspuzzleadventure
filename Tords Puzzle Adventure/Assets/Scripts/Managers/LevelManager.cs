@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
@@ -47,14 +45,14 @@ public class LevelManager : MonoBehaviour
 
 	public void levelCompleted()
 	{
-		Debug.Log("Level completed");
 		currentLevel += 1;
 		GameManager.instance.LoadLevel();
 	}
 
 	public void levelFailed()
 	{
-		Debug.Log("Level failed");
+		currentLevel -= 1;
+		currentLevel = Mathf.Max(0, currentLevel);
 		GameManager.instance.LoadLevel();
 	}
 
