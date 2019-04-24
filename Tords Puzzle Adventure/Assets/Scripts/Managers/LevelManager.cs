@@ -1,46 +1,19 @@
 ﻿using UnityEngine;
+using System.IO;
+using System.Collections.Generic;
+using System;
 
 public class LevelManager : MonoBehaviour
 {
 	public static LevelManager instance = null;
+	public TextAsset[] levels;
 
-	int currentLevel = 1;
-
-	public int[,] level1 = new int[,]
-	{
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 1,1,1,1,1,1,1,1 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 }
-	};
-
-	public int[,] level2 = new int[,]
-{
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 1,1,1,1,1,1,1,1 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 },
-		{ 0,0,0,0,0,0,0,0 }
-};
+	int currentLevel = 0;
+	List<int[,]> allLevels = new List<int[,]>();
 
 	public int[,] currentLevelGrid()
 	{
-		if (currentLevel == 1)
-			return level1;
-		if (currentLevel == 2)
-			return level2;
-		else
-		{
-			Debug.Log("No more levels added");
-			return level1;
-		}
+		return allLevels[currentLevel];
 	}
 
 	public void levelCompleted()
@@ -73,5 +46,31 @@ public class LevelManager : MonoBehaviour
 		}
 
 		DontDestroyOnLoad(gameObject);
+
+		Initialize();
+	}
+
+	void Initialize()
+	{
+		for (int i = 0; i < levels.Length; i++)
+		{
+			TextAsset level = levels[i];
+			if (level != null)
+			{
+				string[] rows = level.text.Split('\n');
+				int[,] levelCollection = new int[rows.Length, rows.Length];
+				for (int r = 0; r < rows.Length - 1; r++)
+				{
+					string row = rows[r];
+					for (int c = 0; c < row.Length - 1; c++)
+					{
+						char col = row[c];
+						levelCollection[r, c] = (int)Char.GetNumericValue(col); ;
+					}
+				}
+
+				allLevels.Add(levelCollection);
+			}
+		}
 	}
 }

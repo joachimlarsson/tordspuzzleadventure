@@ -8,7 +8,7 @@ public class MaterialManager : MonoBehaviour
 
 	public Material MaterielCurrentLevel()
 	{
-		return materials[LevelManager.instance.getCurrentLevel() - 1];
+		return materials[LevelManager.instance.getCurrentLevel()];
 	}
 
 	public Material MaterielForLevel(int level)
