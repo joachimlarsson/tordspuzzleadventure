@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.23096374, g: 0.23410228, b: 0.27066663, a: 1}
+  m_IndirectSpecularColor: {r: 0.22932911, g: 0.23240262, b: 0.2687274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -277,6 +277,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &773318048
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1792762217}
+    m_Modifications:
+    - target: {fileID: 343116155051361543, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_Name
+      value: Skybox Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 343116155051361562, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 1042824724}
+    - target: {fileID: 343116155051361562, guid: f4c83ddab4a8abe43963fcde2fd281be,
+        type: 3}
+      propertyPath: SkyBoxRotation.y
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4c83ddab4a8abe43963fcde2fd281be, type: 3}
+--- !u!4 &773318049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 343116155051361542, guid: f4c83ddab4a8abe43963fcde2fd281be,
+    type: 3}
+  m_PrefabInstance: {fileID: 773318048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &975507876
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +393,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1042824724 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1959175849095339457, guid: 09ec35f455450524ca9a04817f965597,
+    type: 3}
+  m_PrefabInstance: {fileID: 2037763058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1069192040
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +547,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2037763059}
+  - {fileID: 773318049}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
