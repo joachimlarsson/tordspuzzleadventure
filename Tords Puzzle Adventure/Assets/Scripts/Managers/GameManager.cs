@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 	public void LoadTutorial()
 	{
 		Initiate.Fade(tutorialElevatorScene, Color.black, 0.5f);
+		AudioManager.instance.PlayAfterTime("Theme", 2.0f);
 	}
 
 	public void LoadLevel()
