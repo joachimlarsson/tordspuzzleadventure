@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 		}
 
 		DontDestroyOnLoad(gameObject);
+
+		AudioManager.instance.Play("MainMenu");
 	}
 
 	public void LoadLobby()
@@ -37,5 +39,10 @@ public class GameManager : MonoBehaviour
 	public void LoadLevel()
 	{
 		Initiate.Fade(levelScene, Color.black, 0.5f);
+	}
+
+	public void ExitGame()
+	{
+		Application.Quit();
 	}
 }
