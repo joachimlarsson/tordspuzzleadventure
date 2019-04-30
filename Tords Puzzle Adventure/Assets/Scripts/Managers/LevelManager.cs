@@ -22,11 +22,19 @@ public class LevelManager : MonoBehaviour
 		GameManager.instance.LoadLevel();
 	}
 
+	public void tutorialCompleted()
+	{
+		GameManager.instance.LoadLevel();
+	}
+
 	public void levelFailed()
 	{
 		currentLevel -= 1;
 		currentLevel = Mathf.Max(0, currentLevel);
-		GameManager.instance.LoadLevel();
+		if (currentLevel == 0)
+			GameManager.instance.LoadTutorial();
+		else
+			GameManager.instance.LoadLevel();
 	}
 
 	public int getCurrentLevel()
