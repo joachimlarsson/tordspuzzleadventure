@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 	const string levelScene = "LevelScene";
 	const string lobbyScene = "LobbyScene";
 	const string tutorialElevatorScene = "TutorialElevatorScene";
+	const string mainMenuScene = "MenuScene";
 
 	void Awake()
     {
@@ -45,5 +46,10 @@ public class GameManager : MonoBehaviour
 	public void ExitGame()
 	{
 		Application.Quit();
+	}
+
+	public void LoadMainMenu()
+	{
+		Initiate.Fade(mainMenuScene, Color.black, 0.5f);
 	}
 }
